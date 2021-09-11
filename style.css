@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+body {
+  background-color: #f4f4f4;
+  color: #555555;
+  font-family: "Montserrat", "Arial";
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* NAVIGATION BAR */
+.navbar-custom {
+  background-color: #1c1a18;
+}
+.navbar-custom a {
+  color: white;
+}
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link,
+.dropdown-menu .dropdown-item.active {
+  background-color: #1c1a18;
+  color: #ffc344;
+}
+.navbar-nav li {
+  font-size: 1.25rem;
+}
+.navbar-custom .dropdown-menu {
+  background-color: #1c1a18;
+  color: white;
+}
+.navbar-custom .dropdown-menu a {
+  font-size: 1.1rem;
+  height: auto;
+  padding: 10px 20px 10px 20px;
+  margin: auto;
+}
+.navbar-custom .dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffc344;
+}
+.custom-toggler.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* INDEX */
+.general-picture-holder {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.general-picture {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.index-general-holder {
+  background-image: url("images/general-2.svg");
+}
+
+.jumbotron.index {
+  max-width: 600px;
+  box-sizing: border-box;
+  border: 20px solid #1c1a18;
+  /* padding: 60px 50px; */
+  padding: 60px 5vw;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #f4f4f4;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 8px 7px 6px rgba(28, 26, 24, 0.25);
+}
+.jumbotron.index h1 {
+  font-family: "Sacramento", "Montserrat", Arial;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+.jumbotron.index p {
+  font-size: 1.25rem;
+  line-height: 2;
+}
+
+.jumbotron.reviews {
+  background-color: #1c1a18;
+  color: white;
+  max-width: 600px;
+  height: 500px;
+  box-sizing: border-box;
+  border: 1px solid #1c1a18;
+  padding: 10px 3vw;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: scroll;
+  box-shadow: 5px 5px 4px rgba(28, 26, 24, 0.25);
+}
+.jumbotron.reviews h2 {
+  font-family: "Sacramento", "Montserrat", Arial;
+  font-size: 2.25rem;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 30px;
+}
+.jumbotron.reviews .review {
+  box-sizing: border-box;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 0px 30px;
+}
+.jumbotron.reviews .commenter {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  margin-top: 10px;
+}
+.jumbotron.reviews .comment {
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: justify;
+  margin-top: -10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* MENU */
+#general-holder {
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+}
+#title {
+  font-family: "Sacramento";
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #1c1a18;
+  line-height: 150%;
+}
+#subtitle {
+  font-family: "Sacramento";
+  text-align: left;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #1c1a18;
+  margin-bottom: 10px;
+}
+#subtitle-description {
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 50px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #1c1a18;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.polaroid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  /* margin: 0px -5vw; */
+}
+.polaroid {
+  display: block;
+  max-width: 350px;
+  height: 450px;
+  background-color: white;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: thin solid #dddddd;
+  box-shadow: 5px 5px 4.5px rgba(28, 26, 24, 0.25);
+}
+.polaroid-image {
+  position: relative;
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  margin: 0;
+}
+.food-name {
+  padding: 10px;
+  height: 225px;
+  overflow-y: auto;
+}
+.food-name h3 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: auto;
+}
+.food-name p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 0.975em;
+  margin: -3px 12px 3px 12px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* ABOUT US */
+
+#about-us-general-holder {
+  width: 85%;
+  margin: auto;
+}
+
+.about-us-container {
+  float: left;
+  padding: 0px -1vw;
+}
+.about-us-container h1 {
+  font-family: "Sacramento", "Montserrat", Arial;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: auto;
+}
+.about-us-container p {
+  text-align: justify;
+  text-indent: 50px;
+  line-height: 1.75;
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+.about-us-image {
+  width: 300px;
+  margin: 10px;
+  float: left;
+  box-shadow: 2px 2px 3px rgba(28, 26, 24, 0.25);
+}
+
+.more-info-container {
+  margin-top: 25px;
+  padding: 5px 25px;
+  background-color: #e4e4e4;
+  border: 1px solid #e5e5e5;
+  box-shadow: 4px 4px 4px rgba(28, 26, 24, 0.25);
+}
+.more-info-container h2 {
+  font-family: "Sacramento", "Montserrat", Arial;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: auto;
+}
+.more-info-container p {
+  text-align: justify;
+  text-indent: 50px;
+  line-height: 1.6;
+  font-size: 17px;
+  color: #1c1a18;
+}
+#profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0px auto 10px auto;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* FOOTER */
+.footer-custom {
+  background-color: #3f3f3f;
+  color: white;
+}
+.footer-custom a {
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+.footer-custom a:hover {
+  color: #ffc344;
+  text-decoration: none;
+}
+.footer-custom p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+.footer-copyright {
+  background-color: #1c1a18;
+  color: white;
+}
+.footer-copyright p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.footer-copyright a {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #1c1a18;
+}
+::-webkit-scrollbar-thumb {
+  background: #cccccc;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aaaaaa;
+}
